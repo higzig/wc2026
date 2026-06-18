@@ -98,9 +98,9 @@
 
   .player-block { display: flex; align-items: baseline; gap: 8px; min-width: 0; overflow: hidden; }
   .cflag { display: none; }
-  .player-text { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
-  .pname { font-family: 'Big Shoulders', sans-serif; font-size: 18px; font-weight: 700; color: #15151f; line-height: 1.1; letter-spacing: 0.1px; white-space: nowrap; }
-  .psub { font-size: 11px; color: #9595a0; font-style: italic; font-weight: 400; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .player-text { display: flex; align-items: baseline; gap: 6px; min-width: 0; flex-wrap: wrap; }
+  .pname { font-family: 'Big Shoulders', sans-serif; font-size: 18px; font-weight: 700; color: #15151f; line-height: 1.1; letter-spacing: 0.1px; white-space: nowrap; flex-shrink: 0; }
+  .psub { font-size: 11px; color: #9595a0; font-style: italic; font-weight: 400; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 
   .tp-val, .sp-val {
     font-family: 'Big Shoulders', sans-serif;
@@ -577,6 +577,50 @@
   .row.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+  /* ── Mobile ── */
+  @media (max-width: 480px) {
+
+    body { padding: 12px 8px; }
+
+    /* Standings — tighter columns, smaller text */
+    .col-labels,
+    .row {
+      grid-template-columns: 20px 1fr 28px 28px 32px 36px;
+      gap: 2px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .pos-num { font-size: 15px; }
+    .pname { font-size: 15px; }
+    .psub { font-size: 10px; }
+
+    .tp-val, .sp-val { font-size: 14px; }
+    .gd-val { font-size: 11px; }
+    .total-val { font-size: 15px; }
+
+    /* Scoreboard — smaller flags and text */
+    .scoreboard .side-flag { font-size: 18px; }
+    .scoreboard .side-name { font-size: 13px; }
+
+    .score-box { padding: 4px 8px; gap: 6px; }
+    .score-box .score-num { font-size: 17px; }
+
+    .side-player, .player-tag { font-size: 10px; gap: 3px; }
+    .jersey-icon { width: 11px; height: 11px; }
+    .player-tag .tag-flag.scorer-icon { font-size: 10px; }
+    .sp-pts, .gls-badge { font-size: 9px; }
+
+    .match-row { padding: 12px 12px; }
+    .match-row-meta { font-size: 11px; }
+
+    /* GW title */
+    .gw-title { font-size: 15px; }
+    .gw-head { padding: 12px 14px; }
+
+    /* Hero title smaller */
+    .hero-title { font-size: clamp(14px, 4.5vw, 22px); }
   }
 </style>
 </head>

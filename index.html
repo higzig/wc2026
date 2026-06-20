@@ -96,7 +96,16 @@
     color: #15151f;
   }
 
-  .player-block { display: flex; align-items: baseline; gap: 8px; min-width: 0; overflow: hidden; }
+  .pos-arrow {
+    font-size: 9px;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+    margin-top: 1px;
+  }
+  .pos-arrow.up { color: #1a9c52; }
+  .pos-arrow.down { color: #d23c3c; }
+  .pos-arrow.same { color: #c6c6cc; font-size: 8px; }
   .cflag { display: none; }
   .player-text { display: flex; align-items: baseline; gap: 6px; min-width: 0; flex-wrap: wrap; }
   .pname { font-family: 'Big Shoulders', sans-serif; font-size: 18px; font-weight: 700; color: #15151f; line-height: 1.1; letter-spacing: 0.1px; white-space: nowrap; flex-shrink: 0; }
@@ -643,37 +652,52 @@
     </div>
 
     <div class="row rank1">
-      <div class="accent-bar"></div>
-      <div class="pos-num">1</div>
-      <div class="player-block"><div class="player-text"><div class="pname">Seán</div><div class="psub">England · Messi</div></div></div>
-      <div class="tp-val">3</div>
-      <div class="sp-val">3</div>
-      <div class="gd-val pos">+2</div>
+      <div class="accent-bar"></div><div class="pos-num">1<span class="pos-arrow up">↑5</span></div>
+      <div class="player-block"><div class="player-text"><div class="pname">Heitor</div><div class="psub">Brazil · Kane</div></div></div>
+      <div class="tp-val">4</div>
+      <div class="sp-val ">2</div>
+      <div class="gd-val pos">+3</div>
       <div class="total-val">6</div>
     </div>
 
     <div class="row rank2">
-      <div class="accent-bar"></div>
-      <div class="pos-num">2</div>
+      <div class="accent-bar"></div><div class="pos-num">2<span class="pos-arrow down">↓1</span></div>
+      <div class="player-block"><div class="player-text"><div class="pname">Seán</div><div class="psub">England · Messi</div></div></div>
+      <div class="tp-val">3</div>
+      <div class="sp-val ">3</div>
+      <div class="gd-val pos">+2</div>
+      <div class="total-val">6</div>
+    </div>
+
+    <div class="row rank3">
+      <div class="accent-bar"></div><div class="pos-num">3<span class="pos-arrow up">↑4</span></div>
+      <div class="player-block"><div class="player-text"><div class="pname">John</div><div class="psub">Morocco · Havertz</div></div></div>
+      <div class="tp-val">4</div>
+      <div class="sp-val ">2</div>
+      <div class="gd-val pos">+1</div>
+      <div class="total-val">6</div>
+    </div>
+
+    <div class="row">
+      <div class="pos-num">4<span class="pos-arrow down">↓2</span></div>
       <div class="player-block"><div class="player-text"><div class="pname">Louise</div><div class="psub">France · Mbappé</div></div></div>
       <div class="tp-val">3</div>
-      <div class="sp-val">2</div>
+      <div class="sp-val ">2</div>
       <div class="gd-val pos">+2</div>
       <div class="total-val">5</div>
     </div>
 
-    <div class="row rank3">
-      <div class="accent-bar"></div>
-      <div class="pos-num">3</div>
+    <div class="row">
+      <div class="pos-num">5<span class="pos-arrow down">↓2</span></div>
       <div class="player-block"><div class="player-text"><div class="pname">Ryan</div><div class="psub">Colombia · Vini Jr.</div></div></div>
       <div class="tp-val">3</div>
-      <div class="sp-val">1</div>
+      <div class="sp-val ">2</div>
       <div class="gd-val pos">+2</div>
-      <div class="total-val">4</div>
+      <div class="total-val">5</div>
     </div>
 
     <div class="row">
-      <div class="pos-num">4</div>
+      <div class="pos-num">6<span class="pos-arrow down">↓2</span></div>
       <div class="player-block"><div class="player-text"><div class="pname">Tomás</div><div class="psub">Germany · Raphinha</div></div></div>
       <div class="tp-val">3</div>
       <div class="sp-val zero">0</div>
@@ -682,7 +706,7 @@
     </div>
 
     <div class="row">
-      <div class="pos-num">5</div>
+      <div class="pos-num">7<span class="pos-arrow down">↓2</span></div>
       <div class="player-block"><div class="player-text"><div class="pname">Peter</div><div class="psub">Argentina · Ronaldo</div></div></div>
       <div class="tp-val">3</div>
       <div class="sp-val zero">0</div>
@@ -691,34 +715,16 @@
     </div>
 
     <div class="row">
-      <div class="pos-num">6</div>
-      <div class="player-block"><div class="player-text"><div class="pname">Heitor</div><div class="psub">Brazil · Kane</div></div></div>
-      <div class="tp-val">1</div>
-      <div class="sp-val">2</div>
-      <div class="gd-val zero">0</div>
-      <div class="total-val">3</div>
-    </div>
-
-    <div class="row">
-      <div class="pos-num">7</div>
-      <div class="player-block"><div class="player-text"><div class="pname">John</div><div class="psub">Morocco · Havertz</div></div></div>
-      <div class="tp-val">1</div>
-      <div class="sp-val">2</div>
-      <div class="gd-val zero">0</div>
-      <div class="total-val">3</div>
-    </div>
-
-    <div class="row">
-      <div class="pos-num">8</div>
+      <div class="pos-num">8<span class="pos-arrow same">–</span></div>
       <div class="player-block"><div class="player-text"><div class="pname">Jamie</div><div class="psub">Croatia · Haaland</div></div></div>
-      <div class="tp-val zero">0</div>
-      <div class="sp-val">2</div>
+      <div class="tp-val">0</div>
+      <div class="sp-val zero">0</div>
       <div class="gd-val neg">-2</div>
       <div class="total-val">2</div>
     </div>
 
     <div class="row">
-      <div class="pos-num">9</div>
+      <div class="pos-num">9<span class="pos-arrow same">–</span></div>
       <div class="player-block"><div class="player-text"><div class="pname">Cormac</div><div class="psub">Belgium · Yamal</div></div></div>
       <div class="tp-val">1</div>
       <div class="sp-val zero">0</div>
@@ -727,7 +733,7 @@
     </div>
 
     <div class="row">
-      <div class="pos-num">10</div>
+      <div class="pos-num">10<span class="pos-arrow same">–</span></div>
       <div class="player-block"><div class="player-text"><div class="pname">Eamonn</div><div class="psub">Spain · Alvarez</div></div></div>
       <div class="tp-val">1</div>
       <div class="sp-val zero">0</div>
@@ -736,7 +742,7 @@
     </div>
 
     <div class="row">
-      <div class="pos-num">11</div>
+      <div class="pos-num">11<span class="pos-arrow same">–</span></div>
       <div class="player-block"><div class="player-text"><div class="pname">Jack</div><div class="psub">Netherlands · Olise</div></div></div>
       <div class="tp-val">1</div>
       <div class="sp-val zero">0</div>
@@ -745,8 +751,7 @@
     </div>
 
     <div class="row last-row">
-      <div class="accent-bar"></div>
-      <div class="pos-num">12</div>
+      <div class="accent-bar"></div><div class="pos-num">12<span class="pos-arrow same">–</span></div>
       <div class="player-block"><div class="player-text"><div class="pname">Luan</div><div class="psub">Portugal · Oyarzabal</div></div></div>
       <div class="tp-val">1</div>
       <div class="sp-val zero">0</div>
@@ -865,17 +870,17 @@
       <div class="match-row">
         <div class="match-row-meta">19 Jun, 9pm</div>
         <div class="scoreboard">
-          <div class="side"><span class="side-flag">🇧🇷</span><div class="side-text"><span class="side-name">Brazil</span><div class="side-players"><span class="side-player"><svg class="jersey-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3L6 5L3 8L6 10V20H18V10L21 8L18 5L15 3C15 3 14 5 12 5C10 5 9 3 9 3Z" fill="currentColor" fill-opacity="0.6"/></svg>Heitor - Brazil<span class="sp-pts pending">–</span></span><span class="player-tag no-score"><span class="tag-flag scorer-icon">⚽</span>Ryan - Vini Jr.<span class="gls-badge pending">–</span></span></div></div></div>
+          <div class="side"><span class="side-flag">🇧🇷</span><div class="side-text"><span class="side-name">Brazil</span><div class="side-players"><span class="side-player"><svg class="jersey-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3L6 5L3 8L6 10V20H18V10L21 8L18 5L15 3C15 3 14 5 12 5C10 5 9 3 9 3Z" fill="currentColor" fill-opacity="0.6"/></svg>Heitor - Brazil<span class="sp-pts win">+3 pts</span></span><span class="player-tag"><span class="tag-flag scorer-icon">⚽</span>Ryan - Vini Jr.<span class="gls-badge">+1 Gl</span></span></div></div></div>
           <div class="score-box vs"><span class="score-sep">V</span></div>
           <div class="side right"><div class="side-text"><span class="side-name">Haiti</span></div><span class="side-flag">🇭🇹</span></div>
         </div>
       </div>
       <div class="match-row">
-        <div class="match-row-meta">20 Jun, 6pm</div>
+        <div class="match-row-meta">19 Jun, 11pm</div>
         <div class="scoreboard">
           <div class="side"><span class="side-flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span><div class="side-text"><span class="side-name">Scotland</span></div></div>
-          <div class="score-box vs"><span class="score-sep">V</span></div>
-          <div class="side right"><div class="side-text"><span class="side-name">Morocco</span><div class="side-players"><span class="side-player"><svg class="jersey-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3L6 5L3 8L6 10V20H18V10L21 8L18 5L15 3C15 3 14 5 12 5C10 5 9 3 9 3Z" fill="currentColor" fill-opacity="0.6"/></svg>John - Morocco<span class="sp-pts pending">–</span></span></div></div><span class="side-flag">🇲🇦</span></div>
+          <div class="score-box"><span class="score-num loser">0</span><span class="score-sep">-</span><span class="score-num winner">1</span></div>
+          <div class="side right"><div class="side-text"><span class="side-name">Morocco</span><div class="side-players"><span class="side-player"><svg class="jersey-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3L6 5L3 8L6 10V20H18V10L21 8L18 5L15 3C15 3 14 5 12 5C10 5 9 3 9 3Z" fill="currentColor" fill-opacity="0.6"/></svg>John - Morocco<span class="sp-pts win">+3 pts</span></span></div></div><span class="side-flag">🇲🇦</span></div>
         </div>
       </div>
       <div class="match-row">
@@ -979,7 +984,7 @@
         <div class="scoreboard">
           <div class="side"><span class="side-flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span><div class="side-text"><span class="side-name">Scotland</span></div></div>
           <div class="score-box vs"><span class="score-sep">V</span></div>
-          <div class="side right"><div class="side-text"><span class="side-name">Brazil</span><div class="side-players"><span class="side-player"><svg class="jersey-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3L6 5L3 8L6 10V20H18V10L21 8L18 5L15 3C15 3 14 5 12 5C10 5 9 3 9 3Z" fill="currentColor" fill-opacity="0.6"/></svg>Heitor - Brazil<span class="sp-pts pending">–</span></span><span class="player-tag no-score"><span class="tag-flag scorer-icon">⚽</span>Ryan - Vini Jr.<span class="gls-badge pending">–</span></span></div></div><span class="side-flag">🇧🇷</span></div>
+          <div class="side right"><div class="side-text"><span class="side-name">Brazil</span><div class="side-players"><span class="side-player"><svg class="jersey-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3L6 5L3 8L6 10V20H18V10L21 8L18 5L15 3C15 3 14 5 12 5C10 5 9 3 9 3Z" fill="currentColor" fill-opacity="0.6"/></svg>Heitor - Brazil<span class="sp-pts win">+3 pts</span></span><span class="player-tag"><span class="tag-flag scorer-icon">⚽</span>Ryan - Vini Jr.<span class="gls-badge">+1 Gl</span></span></div></div><span class="side-flag">🇧🇷</span></div>
         </div>
       </div>
       <div class="match-row">

@@ -21,15 +21,15 @@ export const players = [
   { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:4,  sp:2, gd:3,  cg:2, sg:1, gwOnePos:6  },
   { name:"Seán",   country:"England",     countryFlag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", scorer:"Messi",      scorerNat:"Argentina", tp:3,  sp:5, gd:2,  cg:1, sg:2, gwOnePos:1  },
   { name:"John",   country:"Morocco",     countryFlag:"🇲🇦", scorer:"Havertz",    scorerNat:"Germany",   tp:4,  sp:2, gd:1,  cg:2, sg:2, gwOnePos:7  },
-  { name:"Louise", country:"France",      countryFlag:"🇫🇷", scorer:"Mbappé",     scorerNat:"France",    tp:3,  sp:2, gd:2,  cg:1, sg:1, gwOnePos:2  },
+  { name:"Louise", country:"France",      countryFlag:"🇫🇷", scorer:"Mbappé",     scorerNat:"France",    tp:6,  sp:4, gd:5,  cg:2, sg:2, gwOnePos:2  },
   { name:"Ryan",   country:"Colombia",    countryFlag:"🇨🇴", scorer:"Vini Jr.",   scorerNat:"Brazil",    tp:3,  sp:2, gd:2,  cg:1, sg:2, gwOnePos:3  },
   { name:"Tomás",  country:"Germany",     countryFlag:"🇩🇪", scorer:"Raphinha",   scorerNat:"Brazil",    tp:6,  sp:0, gd:7,  cg:2, sg:2, gwOnePos:4  },
-  { name:"Peter",  country:"Argentina",   countryFlag:"🇦🇷", scorer:"Ronaldo",    scorerNat:"Portugal",  tp:6,  sp:0, gd:5,  cg:2, sg:1, gwOnePos:5  },
-  { name:"Jamie",  country:"Croatia",     countryFlag:"🇭🇷", scorer:"Haaland",    scorerNat:"Norway",    tp:0,  sp:2, gd:-2, cg:1, sg:1, gwOnePos:8  },
+  { name:"Peter",  country:"Argentina",   countryFlag:"🇦🇷", scorer:"Ronaldo",    scorerNat:"Portugal",  tp:6,  sp:2, gd:5,  cg:2, sg:2, gwOnePos:5  },
+  { name:"Jamie",  country:"Croatia",     countryFlag:"🇭🇷", scorer:"Haaland",    scorerNat:"Norway",    tp:0,  sp:4, gd:-2, cg:1, sg:2, gwOnePos:8  },
   { name:"Cormac", country:"Belgium",     countryFlag:"🇧🇪", scorer:"Yamal",      scorerNat:"Spain",     tp:2,  sp:1, gd:0,  cg:2, sg:2, gwOnePos:9  },
   { name:"Eamonn", country:"Spain",       countryFlag:"🇪🇸", scorer:"Alvarez",    scorerNat:"Argentina", tp:4,  sp:0, gd:4,  cg:2, sg:2, gwOnePos:10 },
   { name:"Jack",   country:"Netherlands", countryFlag:"🇳🇱", scorer:"Olise",      scorerNat:"France",    tp:4,  sp:0, gd:4,  cg:2, sg:1, gwOnePos:11 },
-  { name:"Luan",   country:"Portugal",    countryFlag:"🇵🇹", scorer:"Oyarzabal",  scorerNat:"Spain",     tp:1,  sp:2, gd:0,  cg:1, sg:2, gwOnePos:12 },
+  { name:"Luan",   country:"Portugal",    countryFlag:"🇵🇹", scorer:"Oyarzabal",  scorerNat:"Spain",     tp:4,  sp:2, gd:4,  cg:2, sg:2, gwOnePos:12 },
 ];
 
 // ── GAME WEEKS ───────────────────────────────────────────────
@@ -154,17 +154,17 @@ export const gameWeeks = [
         scorerPills:[{ player:"Seán",   scorer:"Messi",   goals:2 },
                      { player:"Eamonn", scorer:"Alvarez", goals:0 }] },
 
-      { time:"22 Jun, 10pm", home:"France",        away:"Iraq",         score:null,
-        leftPills:  [{ player:"Louise", scorerPlayer:"Louise", scorer:"Mbappé", goals:null }],
+      { time:"22 Jun, 10pm", home:"France",        away:"Iraq",         score:"3-0",
+        leftPills:  [{ player:"Louise", scorerPlayer:"Louise", scorer:"Mbappé", goals:2 }],
         rightPills: [],
         scorerPills:[{ player:"Jack", scorer:"Olise", goals:null }] },
 
-      { time:"23 Jun, 1am",  home:"Norway",        away:"Senegal",      score:null,
+      { time:"23 Jun, 1am",  home:"Norway",        away:"Senegal",      score:"3-2",
         leftPills:[], rightPills:[],
-        scorerPills:[{ player:"Jamie", scorer:"Haaland", goals:null }] },
+        scorerPills:[{ player:"Jamie", scorer:"Haaland", goals:2 }] },
 
-      { time:"23 Jun, 6pm",  home:"Portugal",      away:"Uzbekistan",   score:null,
-        leftPills:  [{ player:"Luan", scorerPlayer:"Peter", scorer:"Ronaldo", goals:null }],
+      { time:"23 Jun, 6pm",  home:"Portugal",      away:"Uzbekistan",   score:"4-0",
+        leftPills:  [{ player:"Luan", scorerPlayer:"Peter", scorer:"Ronaldo", goals:2 }],
         rightPills: [], scorerPills:[] },
 
       { time:"23 Jun, 9pm",  home:"England",       away:"Ghana",        score:null,

@@ -18,7 +18,7 @@
 //   gwOnePos    : their position at the END of game week 1 (used for arrows)
 
 export const players = [
-  { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:4,  sp:2, gd:3,  cg:2, sg:1, gwOnePos:6  },
+  { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:4,  sp:2, gd:3,  cg:2, sg:2, gwOnePos:6  },
   { name:"Seán",   country:"England",     countryFlag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", scorer:"Messi",      scorerNat:"Argentina", tp:4,  sp:5, gd:2,  cg:2, sg:2, gwOnePos:1  },
   { name:"John",   country:"Morocco",     countryFlag:"🇲🇦", scorer:"Havertz",    scorerNat:"Germany",   tp:4,  sp:2, gd:1,  cg:2, sg:2, gwOnePos:7  },
   { name:"Louise", country:"France",      countryFlag:"🇫🇷", scorer:"Mbappé",     scorerNat:"France",    tp:6,  sp:4, gd:5,  cg:2, sg:2, gwOnePos:2  },
@@ -28,7 +28,7 @@ export const players = [
   { name:"Jamie",  country:"Croatia",     countryFlag:"🇭🇷", scorer:"Haaland",    scorerNat:"Norway",    tp:0,  sp:4, gd:-2, cg:1, sg:2, gwOnePos:8  },
   { name:"Cormac", country:"Belgium",     countryFlag:"🇧🇪", scorer:"Yamal",      scorerNat:"Spain",     tp:2,  sp:1, gd:0,  cg:2, sg:2, gwOnePos:9  },
   { name:"Eamonn", country:"Spain",       countryFlag:"🇪🇸", scorer:"Alvarez",    scorerNat:"Argentina", tp:4,  sp:0, gd:4,  cg:2, sg:2, gwOnePos:10 },
-  { name:"Jack",   country:"Netherlands", countryFlag:"🇳🇱", scorer:"Olise",      scorerNat:"France",    tp:4,  sp:0, gd:4,  cg:2, sg:1, gwOnePos:11 },
+  { name:"Jack",   country:"Netherlands", countryFlag:"🇳🇱", scorer:"Olise",      scorerNat:"France",    tp:4,  sp:0, gd:4,  cg:2, sg:2, gwOnePos:11 },
   { name:"Luan",   country:"Portugal",    countryFlag:"🇵🇹", scorer:"Oyarzabal",  scorerNat:"Spain",     tp:4,  sp:2, gd:4,  cg:2, sg:2, gwOnePos:12 },
 ];
 

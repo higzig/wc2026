@@ -19,7 +19,7 @@
 
 export const players = [
   { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:4,  sp:2, gd:3,  cg:2, sg:1, gwOnePos:6  },
-  { name:"Seán",   country:"England",     countryFlag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", scorer:"Messi",      scorerNat:"Argentina", tp:3,  sp:5, gd:2,  cg:1, sg:2, gwOnePos:1  },
+  { name:"Seán",   country:"England",     countryFlag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", scorer:"Messi",      scorerNat:"Argentina", tp:4,  sp:5, gd:2,  cg:2, sg:2, gwOnePos:1  },
   { name:"John",   country:"Morocco",     countryFlag:"🇲🇦", scorer:"Havertz",    scorerNat:"Germany",   tp:4,  sp:2, gd:1,  cg:2, sg:2, gwOnePos:7  },
   { name:"Louise", country:"France",      countryFlag:"🇫🇷", scorer:"Mbappé",     scorerNat:"France",    tp:6,  sp:4, gd:5,  cg:2, sg:2, gwOnePos:2  },
   { name:"Ryan",   country:"Colombia",    countryFlag:"🇨🇴", scorer:"Vini Jr.",   scorerNat:"Brazil",    tp:3,  sp:2, gd:2,  cg:1, sg:2, gwOnePos:3  },
@@ -157,7 +157,7 @@ export const gameWeeks = [
       { time:"22 Jun, 10pm", home:"France",        away:"Iraq",         score:"3-0",
         leftPills:  [{ player:"Louise", scorerPlayer:"Louise", scorer:"Mbappé", goals:2 }],
         rightPills: [],
-        scorerPills:[{ player:"Jack", scorer:"Olise", goals:null }] },
+        scorerPills:[{ player:"Jack", scorer:"Olise", goals:0 }] },
 
       { time:"23 Jun, 1am",  home:"Norway",        away:"Senegal",      score:"3-2",
         leftPills:[], rightPills:[],
@@ -167,8 +167,8 @@ export const gameWeeks = [
         leftPills:  [{ player:"Luan", scorerPlayer:"Peter", scorer:"Ronaldo", goals:2 }],
         rightPills: [], scorerPills:[] },
 
-      { time:"23 Jun, 9pm",  home:"England",       away:"Ghana",        score:null,
-        leftPills:  [{ player:"Seán", scorerPlayer:"Heitor", scorer:"Kane", goals:null }],
+      { time:"23 Jun, 9pm",  home:"England",       away:"Ghana",        score:"0-0",
+        leftPills:  [{ player:"Seán", scorerPlayer:"Heitor", scorer:"Kane", goals:0 }],
         rightPills: [], scorerPills:[] },
 
       { time:"24 Jun, 12am", home:"Panama",        away:"Croatia",      score:null,

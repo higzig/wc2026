@@ -20,10 +20,10 @@
 export const players = [
   { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:7,  sp:2, gd:6,  cg:3, sg:2, gwOnePos:6  },
   { name:"Seán",   country:"England",     countryFlag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", scorer:"Messi",      scorerNat:"Argentina", tp:4,  sp:5, gd:2,  cg:2, sg:2, gwOnePos:1  },
-  { name:"John",   country:"Morocco",     countryFlag:"🇲🇦", scorer:"Havertz",    scorerNat:"Germany",   tp:7,  sp:2, gd:3,  cg:3, sg:2, gwOnePos:7  },
+  { name:"John",   country:"Morocco",     countryFlag:"🇲🇦", scorer:"Havertz",    scorerNat:"Germany",   tp:7,  sp:2, gd:3,  cg:3, sg:3, gwOnePos:7  },
   { name:"Louise", country:"France",      countryFlag:"🇫🇷", scorer:"Mbappé",     scorerNat:"France",    tp:6,  sp:4, gd:5,  cg:2, sg:2, gwOnePos:2  },
   { name:"Ryan",   country:"Colombia",    countryFlag:"🇨🇴", scorer:"Vini Jr.",   scorerNat:"Brazil",    tp:6,  sp:4, gd:3,  cg:2, sg:3, gwOnePos:3  },
-  { name:"Tomás",  country:"Germany",     countryFlag:"🇩🇪", scorer:"Raphinha",   scorerNat:"Brazil",    tp:6,  sp:0, gd:7,  cg:2, sg:2, gwOnePos:4  },
+  { name:"Tomás",  country:"Germany",     countryFlag:"🇩🇪", scorer:"Raphinha",   scorerNat:"Brazil",    tp:6,  sp:0, gd:6,  cg:3, sg:2, gwOnePos:4  },
   { name:"Peter",  country:"Argentina",   countryFlag:"🇦🇷", scorer:"Ronaldo",    scorerNat:"Portugal",  tp:6,  sp:2, gd:5,  cg:2, sg:2, gwOnePos:5  },
   { name:"Jamie",  country:"Croatia",     countryFlag:"🇭🇷", scorer:"Haaland",    scorerNat:"Norway",    tp:3,  sp:4, gd:-1, cg:2, sg:2, gwOnePos:8  },
   { name:"Cormac", country:"Belgium",     countryFlag:"🇧🇪", scorer:"Yamal",      scorerNat:"Spain",     tp:2,  sp:1, gd:0,  cg:2, sg:2, gwOnePos:9  },
@@ -199,9 +199,9 @@ export const gameWeeks = [
         rightPills: [{ player:"Heitor", scorerPlayer:"Ryan", scorer:"Vini Jr.", goals:2 }],
         scorerPills:[] },
 
-      { time:"25 Jun, 4pm",  home:"Ecuador",       away:"Germany",      score:null,
+      { time:"25 Jun, 4pm",  home:"Ecuador",       away:"Germany",      score:"2-1",
         leftPills:  [],
-        rightPills: [{ player:"Tomás", scorerPlayer:"John", scorer:"Havertz", goals:null }],
+        rightPills: [{ player:"Tomás", scorerPlayer:"John", scorer:"Havertz", goals:0 }],
         scorerPills:[] },
 
       { time:"25 Jun, 7pm",  home:"Tunisia",       away:"Netherlands",  score:null,

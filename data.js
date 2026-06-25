@@ -18,11 +18,11 @@
 //   gwOnePos    : their position at the END of game week 1 (used for arrows)
 
 export const players = [
-  { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:4,  sp:2, gd:3,  cg:2, sg:2, gwOnePos:6  },
+  { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:7,  sp:2, gd:6,  cg:3, sg:2, gwOnePos:6  },
   { name:"Seán",   country:"England",     countryFlag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", scorer:"Messi",      scorerNat:"Argentina", tp:4,  sp:5, gd:2,  cg:2, sg:2, gwOnePos:1  },
-  { name:"John",   country:"Morocco",     countryFlag:"🇲🇦", scorer:"Havertz",    scorerNat:"Germany",   tp:4,  sp:2, gd:1,  cg:2, sg:2, gwOnePos:7  },
+  { name:"John",   country:"Morocco",     countryFlag:"🇲🇦", scorer:"Havertz",    scorerNat:"Germany",   tp:7,  sp:2, gd:3,  cg:3, sg:2, gwOnePos:7  },
   { name:"Louise", country:"France",      countryFlag:"🇫🇷", scorer:"Mbappé",     scorerNat:"France",    tp:6,  sp:4, gd:5,  cg:2, sg:2, gwOnePos:2  },
-  { name:"Ryan",   country:"Colombia",    countryFlag:"🇨🇴", scorer:"Vini Jr.",   scorerNat:"Brazil",    tp:6,  sp:2, gd:3,  cg:2, sg:2, gwOnePos:3  },
+  { name:"Ryan",   country:"Colombia",    countryFlag:"🇨🇴", scorer:"Vini Jr.",   scorerNat:"Brazil",    tp:6,  sp:4, gd:3,  cg:2, sg:3, gwOnePos:3  },
   { name:"Tomás",  country:"Germany",     countryFlag:"🇩🇪", scorer:"Raphinha",   scorerNat:"Brazil",    tp:6,  sp:0, gd:7,  cg:2, sg:2, gwOnePos:4  },
   { name:"Peter",  country:"Argentina",   countryFlag:"🇦🇷", scorer:"Ronaldo",    scorerNat:"Portugal",  tp:6,  sp:2, gd:5,  cg:2, sg:2, gwOnePos:5  },
   { name:"Jamie",  country:"Croatia",     countryFlag:"🇭🇷", scorer:"Haaland",    scorerNat:"Norway",    tp:3,  sp:4, gd:-1, cg:2, sg:2, gwOnePos:8  },
@@ -190,13 +190,13 @@ export const gameWeeks = [
     card: "can-card",
     status: "upcoming",  // ← change to "current" when GW3 starts
     matches: [
-      { time:"24 Jun, 6pm",  home:"Morocco",       away:"Haiti",        score:null,
+      { time:"24 Jun, 6pm",  home:"Morocco",       away:"Haiti",        score:"4-2",
         leftPills:  [{ player:"John", scorerPlayer:null, scorer:null, goals:null }],
         rightPills: [], scorerPills:[] },
 
-      { time:"24 Jun, 6pm",  home:"Scotland",      away:"Brazil",       score:null,
+      { time:"24 Jun, 6pm",  home:"Scotland",      away:"Brazil",       score:"0-3",
         leftPills:  [],
-        rightPills: [{ player:"Heitor", scorerPlayer:"Ryan", scorer:"Vini Jr.", goals:null }],
+        rightPills: [{ player:"Heitor", scorerPlayer:"Ryan", scorer:"Vini Jr.", goals:2 }],
         scorerPills:[] },
 
       { time:"25 Jun, 4pm",  home:"Ecuador",       away:"Germany",      score:null,

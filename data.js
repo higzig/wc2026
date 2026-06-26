@@ -21,14 +21,14 @@ export const players = [
   { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:7,  sp:2, gd:6,  cg:3, sg:2, gwOnePos:6  },
   { name:"Seán",   country:"England",     countryFlag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", scorer:"Messi",      scorerNat:"Argentina", tp:4,  sp:5, gd:2,  cg:2, sg:2, gwOnePos:1  },
   { name:"John",   country:"Morocco",     countryFlag:"🇲🇦", scorer:"Havertz",    scorerNat:"Germany",   tp:7,  sp:2, gd:3,  cg:3, sg:3, gwOnePos:7  },
-  { name:"Louise", country:"France",      countryFlag:"🇫🇷", scorer:"Mbappé",     scorerNat:"France",    tp:6,  sp:4, gd:5,  cg:2, sg:2, gwOnePos:2  },
+  { name:"Louise", country:"France",      countryFlag:"🇫🇷", scorer:"Mbappé",     scorerNat:"France",    tp:9,  sp:4, gd:8,  cg:3, sg:3, gwOnePos:2  },
   { name:"Ryan",   country:"Colombia",    countryFlag:"🇨🇴", scorer:"Vini Jr.",   scorerNat:"Brazil",    tp:6,  sp:4, gd:3,  cg:2, sg:3, gwOnePos:3  },
   { name:"Tomás",  country:"Germany",     countryFlag:"🇩🇪", scorer:"Raphinha",   scorerNat:"Brazil",    tp:6,  sp:0, gd:6,  cg:3, sg:2, gwOnePos:4  },
   { name:"Peter",  country:"Argentina",   countryFlag:"🇦🇷", scorer:"Ronaldo",    scorerNat:"Portugal",  tp:6,  sp:2, gd:5,  cg:2, sg:2, gwOnePos:5  },
-  { name:"Jamie",  country:"Croatia",     countryFlag:"🇭🇷", scorer:"Haaland",    scorerNat:"Norway",    tp:3,  sp:4, gd:-1, cg:2, sg:2, gwOnePos:8  },
+  { name:"Jamie",  country:"Croatia",     countryFlag:"🇭🇷", scorer:"Haaland",    scorerNat:"Norway",    tp:3,  sp:4, gd:-1, cg:2, sg:3, gwOnePos:8  },
   { name:"Cormac", country:"Belgium",     countryFlag:"🇧🇪", scorer:"Yamal",      scorerNat:"Spain",     tp:2,  sp:1, gd:0,  cg:2, sg:2, gwOnePos:9  },
   { name:"Eamonn", country:"Spain",       countryFlag:"🇪🇸", scorer:"Alvarez",    scorerNat:"Argentina", tp:4,  sp:0, gd:4,  cg:2, sg:2, gwOnePos:10 },
-  { name:"Jack",   country:"Netherlands", countryFlag:"🇳🇱", scorer:"Olise",      scorerNat:"France",    tp:4,  sp:0, gd:4,  cg:2, sg:2, gwOnePos:11 },
+  { name:"Jack",   country:"Netherlands", countryFlag:"🇳🇱", scorer:"Olise",      scorerNat:"France",    tp:7,  sp:0, gd:6,  cg:3, sg:3, gwOnePos:11 },
   { name:"Luan",   country:"Portugal",    countryFlag:"🇵🇹", scorer:"Oyarzabal",  scorerNat:"Spain",     tp:4,  sp:2, gd:4,  cg:2, sg:2, gwOnePos:12 },
 ];
 
@@ -204,16 +204,16 @@ export const gameWeeks = [
         rightPills: [{ player:"Tomás", scorerPlayer:"John", scorer:"Havertz", goals:0 }],
         scorerPills:[] },
 
-      { time:"25 Jun, 7pm",  home:"Tunisia",       away:"Netherlands",  score:null,
+      { time:"25 Jun, 7pm",  home:"Tunisia",       away:"Netherlands",  score:"1-3",
         leftPills:  [],
         rightPills: [{ player:"Jack", scorerPlayer:null, scorer:null, goals:null }],
         scorerPills:[] },
 
-      { time:"26 Jun, 8pm",  home:"Norway",        away:"France",       score:null,
+      { time:"26 Jun, 8pm",  home:"Norway",        away:"France",       score:"1-4",
         leftPills:  [],
-        rightPills: [{ player:"Louise", scorerPlayer:"Louise", scorer:"Mbappé", goals:null }],
-        scorerPills:[{ player:"Jack",  scorer:"Olise",   goals:null },
-                     { player:"Jamie", scorer:"Haaland", goals:null }] },
+        rightPills: [{ player:"Louise", scorerPlayer:"Louise", scorer:"Mbappé", goals:0 }],
+        scorerPills:[{ player:"Jack",  scorer:"Olise",   goals:0 },
+                     { player:"Jamie", scorer:"Haaland", goals:0 }] },
 
       { time:"26 Jun, 8pm",  home:"Uruguay",       away:"Spain",        score:null,
         leftPills:  [],
@@ -234,7 +234,7 @@ export const gameWeeks = [
       { time:"27 Jun, 10pm", home:"Croatia",       away:"Ghana",        score:null,
         leftPills:  [{ player:"Jamie", scorerPlayer:null, scorer:null, goals:null }],
         rightPills: [],
-        scorerPills:[{ player:"Jamie", scorer:"Haaland", goals:null }] },
+        scorerPills:[{ player:"Jamie", scorer:"Haaland", goals:0 }] },
 
       { time:"28 Jun, 12.30am", home:"Colombia",   away:"Portugal",     score:null,
         leftPills:  [{ player:"Ryan", scorerPlayer:null, scorer:null, goals:null }],

@@ -18,18 +18,18 @@
 //   gwOnePos    : their position at the END of game week 1 (used for arrows)
 
 export const players = [
-  { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:7,  sp:2, gd:6,  cg:3, sg:2, gwOnePos:6  },
-  { name:"Seán",   country:"England",     countryFlag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", scorer:"Messi",      scorerNat:"Argentina", tp:4,  sp:5, gd:2,  cg:2, sg:2, gwOnePos:1  },
+  { name:"Heitor", country:"Brazil",      countryFlag:"🇧🇷", scorer:"Kane",       scorerNat:"England",   tp:7,  sp:3, gd:6,  cg:3, sg:3, gwOnePos:6  },
+  { name:"Seán",   country:"England",     countryFlag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", scorer:"Messi",      scorerNat:"Argentina", tp:7,  sp:6, gd:4,  cg:3, sg:3, gwOnePos:1  },
   { name:"John",   country:"Morocco",     countryFlag:"🇲🇦", scorer:"Havertz",    scorerNat:"Germany",   tp:7,  sp:2, gd:3,  cg:3, sg:3, gwOnePos:7  },
   { name:"Louise", country:"France",      countryFlag:"🇫🇷", scorer:"Mbappé",     scorerNat:"France",    tp:9,  sp:4, gd:8,  cg:3, sg:3, gwOnePos:2  },
-  { name:"Ryan",   country:"Colombia",    countryFlag:"🇨🇴", scorer:"Vini Jr.",   scorerNat:"Brazil",    tp:6,  sp:4, gd:3,  cg:2, sg:3, gwOnePos:3  },
+  { name:"Ryan",   country:"Colombia",    countryFlag:"🇨🇴", scorer:"Vini Jr.",   scorerNat:"Brazil",    tp:7,  sp:4, gd:3,  cg:3, sg:3, gwOnePos:3  },
   { name:"Tomás",  country:"Germany",     countryFlag:"🇩🇪", scorer:"Raphinha",   scorerNat:"Brazil",    tp:6,  sp:0, gd:6,  cg:3, sg:3, gwOnePos:4  },
-  { name:"Peter",  country:"Argentina",   countryFlag:"🇦🇷", scorer:"Ronaldo",    scorerNat:"Portugal",  tp:6,  sp:2, gd:5,  cg:2, sg:2, gwOnePos:5  },
-  { name:"Jamie",  country:"Croatia",     countryFlag:"🇭🇷", scorer:"Haaland",    scorerNat:"Norway",    tp:3,  sp:4, gd:-1, cg:2, sg:3, gwOnePos:8  },
+  { name:"Peter",  country:"Argentina",   countryFlag:"🇦🇷", scorer:"Ronaldo",    scorerNat:"Portugal",  tp:9,  sp:2, gd:7,  cg:3, sg:3, gwOnePos:5  },
+  { name:"Jamie",  country:"Croatia",     countryFlag:"🇭🇷", scorer:"Haaland",    scorerNat:"Norway",    tp:6,  sp:4, gd:0,  cg:3, sg:3, gwOnePos:8  },
   { name:"Cormac", country:"Belgium",     countryFlag:"🇧🇪", scorer:"Yamal",      scorerNat:"Spain",     tp:5,  sp:1, gd:4,  cg:3, sg:2, gwOnePos:9  },
-  { name:"Eamonn", country:"Spain",       countryFlag:"🇪🇸", scorer:"Alvarez",    scorerNat:"Argentina", tp:7,  sp:0, gd:5,  cg:3, sg:2, gwOnePos:10 },
+  { name:"Eamonn", country:"Spain",       countryFlag:"🇪🇸", scorer:"Alvarez",    scorerNat:"Argentina", tp:7,  sp:0, gd:5,  cg:3, sg:3, gwOnePos:10 },
   { name:"Jack",   country:"Netherlands", countryFlag:"🇳🇱", scorer:"Olise",      scorerNat:"France",    tp:7,  sp:0, gd:6,  cg:3, sg:3, gwOnePos:11 },
-  { name:"Luan",   country:"Portugal",    countryFlag:"🇵🇹", scorer:"Oyarzabal",  scorerNat:"Spain",     tp:4,  sp:2, gd:4,  cg:2, sg:3, gwOnePos:12 },
+  { name:"Luan",   country:"Portugal",    countryFlag:"🇵🇹", scorer:"Oyarzabal",  scorerNat:"Spain",     tp:5,  sp:2, gd:4,  cg:3, sg:3, gwOnePos:12 },
 ];
 
 // ── GAME WEEKS ───────────────────────────────────────────────
@@ -226,26 +226,26 @@ export const gameWeeks = [
         rightPills: [{ player:"Cormac", scorerPlayer:null, scorer:null, goals:null }],
         scorerPills:[] },
 
-      { time:"27 Jun, 10pm", home:"Panama",        away:"England",      score:null,
+      { time:"27 Jun, 10pm", home:"Panama",        away:"England",      score:"0-2",
         leftPills:  [],
-        rightPills: [{ player:"Seán", scorerPlayer:"Heitor", scorer:"Kane", goals:null }],
+        rightPills: [{ player:"Seán", scorerPlayer:"Heitor", scorer:"Kane", goals:1 }],
         scorerPills:[] },
 
-      { time:"27 Jun, 10pm", home:"Croatia",       away:"Ghana",        score:null,
+      { time:"27 Jun, 10pm", home:"Croatia",       away:"Ghana",        score:"2-1",
         leftPills:  [{ player:"Jamie", scorerPlayer:null, scorer:null, goals:null }],
         rightPills: [],
         scorerPills:[{ player:"Jamie", scorer:"Haaland", goals:0 }] },
 
-      { time:"28 Jun, 12.30am", home:"Colombia",   away:"Portugal",     score:null,
+      { time:"28 Jun, 12.30am", home:"Colombia",   away:"Portugal",     score:"0-0",
         leftPills:  [{ player:"Ryan", scorerPlayer:null, scorer:null, goals:null }],
-        rightPills: [{ player:"Luan", scorerPlayer:"Peter", scorer:"Ronaldo", goals:null }],
+        rightPills: [{ player:"Luan", scorerPlayer:"Peter", scorer:"Ronaldo", goals:0 }],
         scorerPills:[] },
 
-      { time:"28 Jun, 3am",  home:"Jordan",        away:"Argentina",    score:null,
+      { time:"28 Jun, 3am",  home:"Jordan",        away:"Argentina",    score:"1-3",
         leftPills:  [],
         rightPills: [{ player:"Peter", scorerPlayer:null, scorer:null, goals:null }],
-        scorerPills:[{ player:"Seán",   scorer:"Messi",   goals:null },
-                     { player:"Eamonn", scorer:"Alvarez", goals:null }] },
+        scorerPills:[{ player:"Seán",   scorer:"Messi",   goals:1 },
+                     { player:"Eamonn", scorer:"Alvarez", goals:0 }] },
     ]
   }
 
